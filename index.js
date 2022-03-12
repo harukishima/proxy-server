@@ -9,7 +9,7 @@ const app = express();
 
 // Configuration
 const PORT = config.port;
-const HOST = "localhost";
+const HOST = "0.0.0.0";
 const API_SERVICE_URL = config.baseURL;
 
 app.use(morgan("dev"));
