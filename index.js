@@ -1,5 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
+const cors = require("cors");
 const { createProxyMiddleware } = require("http-proxy-middleware");
 require("dotenv").config();
 const config = require("./config");
@@ -12,6 +13,11 @@ const HOST = "localhost";
 const API_SERVICE_URL = config.baseURL;
 
 app.use(morgan("dev"));
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 // Info GET endpoint
 app.get("/info", (req, res, next) => {

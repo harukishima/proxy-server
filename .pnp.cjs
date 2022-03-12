@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["cors", "npm:2.8.5"],\
             ["dotenv", "npm:16.0.0"],\
             ["express", "npm:4.17.3"],\
             ["http-proxy-middleware", "virtual:45f8e047ef787792538d46792d681f5a48707ce3d4c7949c8d3ccaf7440274bd1205e7caead128f8793eb37c81da452030a46cb20d0a9ace1b318782a6af53fc#npm:2.0.3"],\
@@ -161,6 +162,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/cookie-signature-npm-1.0.6-93f325f7f0-f4e1b0a98a.zip/node_modules/cookie-signature/",\
           "packageDependencies": [\
             ["cookie-signature", "npm:1.0.6"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["cors", [\
+        ["npm:2.8.5", {\
+          "packageLocation": "./.yarn/cache/cors-npm-2.8.5-c9935a2d12-ced838404c.zip/node_modules/cors/",\
+          "packageDependencies": [\
+            ["cors", "npm:2.8.5"],\
+            ["object-assign", "npm:4.1.1"],\
+            ["vary", "npm:1.1.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -593,6 +605,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["object-assign", [\
+        ["npm:4.1.1", {\
+          "packageLocation": "./.yarn/cache/object-assign-npm-4.1.1-1004ad6dec-fcc6e4ea8c.zip/node_modules/object-assign/",\
+          "packageDependencies": [\
+            ["object-assign", "npm:4.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["on-finished", [\
         ["npm:2.3.0", {\
           "packageLocation": "./.yarn/cache/on-finished-npm-2.3.0-4ce92f72c6-1db595bd96.zip/node_modules/on-finished/",\
@@ -655,6 +676,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["proxy-server", "workspace:."],\
+            ["cors", "npm:2.8.5"],\
             ["dotenv", "npm:16.0.0"],\
             ["express", "npm:4.17.3"],\
             ["http-proxy-middleware", "virtual:45f8e047ef787792538d46792d681f5a48707ce3d4c7949c8d3ccaf7440274bd1205e7caead128f8793eb37c81da452030a46cb20d0a9ace1b318782a6af53fc#npm:2.0.3"],\
